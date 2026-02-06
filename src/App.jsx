@@ -9,12 +9,14 @@ import Contact from './pages/Contact';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
 import { ShopProvider } from './context/ShopContext';
+import ScrollToTop from './components/ScrollToTop';
 import './index.css'; // Global styles
 
 function App() {
   return (
     <ShopProvider>
       <Router>
+        <ScrollToTop /> 
         <div className="app-container" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', scrollBehavior: 'smooth' }}>
           <Navbar />
           <main style={{ flex: 1 }}>

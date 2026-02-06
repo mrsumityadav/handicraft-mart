@@ -77,10 +77,11 @@ const Navbar = () => {
           {/* Search Bar */}
           <div className="search-container" ref={searchRef} style={{ position: 'relative' }}>
             <div
+              // style={{display:'flex', justifyContent:"center"}}
               className={`search-input-wrapper ${showSearch || searchQuery ? 'active' : ''}`}
               onClick={() => { setShowSearch(true); inputRef.current?.focus(); }}
             >
-              <Search size={20} color="#555" style={{ minWidth: '20px' }} />
+              <Search size={20} color="#555" style={{marginLeft:'-5px', minWidth: '20px' }} />
               <input
                 ref={inputRef}
                 type="text"

@@ -84,7 +84,7 @@ const Shop = () => {
                     </button>
                 </div>
 
-                <div className="shop-layout" style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 1fr) 3fr', gap: '40px', marginBottom: '40px' }}>
+                <div className="shop-layout" style={{ display: 'flex', justifyContent:'space-between', gap: '40px', marginBottom: '40px' }}>
 
                     {/* Sidebar Filters */}
                     <aside
@@ -97,6 +97,7 @@ const Shop = () => {
                             height: 'fit-content',
                             position: 'sticky',
                             top: '90px',
+                            minWidth:'280px'
                         }}
                     >
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
@@ -180,7 +181,7 @@ const Shop = () => {
              z-index: 1000;
              overflow-y: auto;
           }
-          .shop-sidebar.active { display: block; }
+          .shop-sidebar.active { display: block; min-width: 250px }
         }
       `}</style>
         </div >
