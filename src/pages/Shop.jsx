@@ -49,7 +49,10 @@ const Shop = () => {
                         padding: '0 20px',
                         color: '#fff',
                         width: '100%',
-                        textAlign: 'left',
+                        display: 'flex',
+                    alignItems: 'center',
+                    flexDirection:'column',
+                    justifyContent:'center',
                     }}
                     className="shop-banner-content"
                 >
@@ -67,7 +70,7 @@ const Shop = () => {
                             fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)',
                             opacity: 0.9,
                             maxWidth: '600px',
-                            color: "#F4F1DE"
+                            color: "#F4F1DE",
                         }}
                     >
                         Discover unique, artisan-made pieces for your home
